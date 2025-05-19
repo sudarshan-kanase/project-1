@@ -1,0 +1,171 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: orange; */
+}
+
+/* Basic styles for navbar */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.navbar .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f4f4f4;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    margin: 4px 0;
+    background-color: #fff;
+}
+
+/* Media query for responsive navbar */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    background-color: orange;
+}
+
+.box {
+    height: 400px;
+    width: 250px;
+    background-color: red;
+    color: black;
+    padding: 24px;
+    margin: 25px;
+    object-fit: cover;
+
+}
+
+.box1 {
+    background-image: url(shiv.jpg);
+}
+
+.box2 {
+    background-image: url(mh.jpg);
+    background-size: cover;
+
+}
+
+.box3 {
+    background-image: url(ganesha.jpg);
+    background-size: cover;
+}
+
+.box4 {
+    background-image: url(Manoj_jarange_patil.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box5 {
+    background-image: url(coding.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#name {
+    display: flex;
+    align-items: center;
+    background-color: orange;
+}
+
+h3 {
+    color: white;
+    padding-left: 40px;
+    margin-left: 130px;
+    margin-bottom: 25px;
+}
+
+#mh {
+    margin-left: 80px;
+}
+
+#explaction {
+    display: flex;
+    align-items: center;
+    background-color: orange;
+
+}
+
+p {
+    padding-left: 80px;
+}
+
+footer {
+    background-color: #333;
+}
